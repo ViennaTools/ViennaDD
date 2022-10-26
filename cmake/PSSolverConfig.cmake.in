@@ -1,0 +1,14 @@
+@PACKAGE_INIT@
+
+# use find_dependency in config scripts, rather than find_package
+include(CMakeFindDependencyMacro)
+
+# Capturing values from configure time
+# set(VIENNA_EXAMPLE_VAR @VIENNA_EXAMPLE_VAR@)
+
+# Same syntax as find_package
+# find tbb for example
+# find_dependency(TBB REQUIRED HINTS "${TCAD_INSTALL_DIR}/tbb")
+
+# Add the targets file
+# include("${CMAKE_CURRENT_LIST_DIR}/@PROJECT_NAME@Targets.cmake")
